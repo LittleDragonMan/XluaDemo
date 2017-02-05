@@ -1,0 +1,14 @@
+﻿--author clc
+local LuaText = (CS.UnityEngine.UI.Text)self:GetText("first_text")
+
+function start()
+	print("lua start...")
+	print("LuaText--------:",LuaText);
+	local firstText = self:GetText("first_text")
+
+	print("firstText--------:",firstText);
+	firstText.text = "nihao"
+	print("firstText--------:",firstText.text);
+	firstText.text = "你好"
+	print("firstText--------:",firstText.text);
+end
